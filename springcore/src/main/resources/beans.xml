@@ -8,4 +8,17 @@
     <bean id="airtel" class = "org.springioc.Airtel"></bean>
     <bean id="sim" class = "org.springioc.Vodafone"></bean>
 
+<!--    setter injection-->
+    <bean id = "pravallika" class="org.springDI.Student">
+        <property name="id" value="10"></property>
+        <property name="name" value="pravallika"></property>
+    </bean>
+
+<!--    constructor injection-->
+    <bean id = "sai" class="org.springDI.Student">
+        <constructor-arg name="name" value="sai" type="String"></constructor-arg>
+    </bean>
+
+
+
 </beans>
