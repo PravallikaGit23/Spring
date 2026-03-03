@@ -15,5 +15,12 @@
         <property name="name" value="Pravallika"></property>
         <property name="college" ref="madras"></property>
     </bean>
+    <bean id="callerTune" class="org.loosecoupling.CallerTuneService"></bean>
+    <bean id="calling" class="org.loosecoupling.CallingService"></bean>
+    <bean id="message" class="org.loosecoupling.MessageService"></bean>
+
+    <bean id="airtel" class="org.loosecoupling.Airtel">
+         <property name="serviceObj" ref="callerTune"></property>
+    </bean>
 
 </beans>
